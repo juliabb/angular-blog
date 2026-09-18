@@ -1,27 +1,49 @@
-# AngularBlog
+# Marvel em Pauta
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.2.
+Blog responsivo de cultura pop dedicado ao universo Marvel. O projeto apresenta notícias sobre filmes, séries e bastidores em uma experiência editorial inspirada em revistas digitais.
 
-## Development server
+## Recursos
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Página inicial com matéria principal e notícias complementares.
+- Categorias, datas e tempo estimado de leitura.
+- Páginas individuais para cada matéria.
+- Navegação responsiva para desktop e dispositivos móveis.
+- Tipografia editorial e layout com foco na leitura.
 
-## Code scaffolding
+## Tecnologias
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- [Angular](https://angular.io/) 14
+- TypeScript
+- HTML e CSS
 
-## Build
+## Como executar
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Pré-requisito: Node.js e npm instalados.
 
-## Running unit tests
+```bash
+npm install
+npm start
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Abra [http://localhost:4200](http://localhost:4200) no navegador. A aplicação será atualizada automaticamente ao salvar alterações nos arquivos.
 
-## Running end-to-end tests
+## Scripts disponíveis
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+| Comando | Descrição |
+| --- | --- |
+| `npm start` | Inicia o servidor de desenvolvimento. |
+| `npm run build` | Gera a versão de produção em `dist/`. |
+| `npm test` | Executa os testes unitários com Karma. |
 
-## Further help
+## Estrutura do projeto
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```text
+src/app/
+├── components/    # Cabeçalho e cartões de matérias
+├── data/          # Conteúdo das notícias
+└── pages/         # Página inicial e páginas de artigo
+```
+
+## Conteúdo
+
+As matérias estão centralizadas em `src/app/data/dataFake.ts`. Para adicionar uma notícia, inclua um novo objeto com `id`, categoria, data, tempo de leitura, título, descrição e URL da imagem.
