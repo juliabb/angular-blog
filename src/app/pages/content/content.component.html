@@ -1,15 +1,1 @@
-<div class="container__content">
-  <div class="content__cover">
-    <img src="{{ photoCover }}" alt="" srcset="">
-  </div>
-  <div class="content__title">
-    <h1>{{ contentTitle }}</h1>
-    <hr />
-  </div>
-  <div class="content__description">
-    <a [routerLink]="['']"> << VOLTAR </a>
-    <p>
-      {{ contentDescription }}
-    </p>
-  </div>
-</div>
+<main class="article"><a class="article__back" routerLink="/">← Voltar para as matérias</a><header class="article__header"><p class="article__meta"><span>{{ contentCategory }}</span> · {{ contentDate }} · {{ contentReadTime }}</p><h1>{{ contentTitle }}</h1><p class="article__lead">{{ contentDescription }}</p></header><img class="article__cover" [src]="photoCover" [alt]="contentTitle"><div class="article__body"><p>Nem toda novidade precisa chegar fazendo barulho. Às vezes, as histórias mais promissoras começam justamente nos detalhes: uma escolha de elenco, uma imagem de bastidor ou uma frase dita quase de passagem.</p><p>É nesse espaço entre o que já sabemos e o que ainda está por vir que o universo Marvel continua encontrando novas maneiras de surpreender. A produção aposta em personagens com conflitos reconhecíveis, ação com propósito e um mundo grande o bastante para caber mais de uma perspectiva.</p><blockquote>“O melhor das grandes histórias é quando elas ainda parecem humanas.”</blockquote><p>Por enquanto, vale acompanhar os próximos anúncios com curiosidade — e sem pressa. Esta é uma história em desenvolvimento, e estaremos aqui para separar os fatos das teorias assim que houver novidades.</p></div></main>

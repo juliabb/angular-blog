@@ -1,24 +1,4 @@
-<div class="container__small-card">
-
-  <div class="container__small-card-content">
-    <div class="small-card__photo">
-      <img
-        src="{{ photoCover }}"
-        alt=""
-        srcset=""
-      >
-    </div>
-
-    <div class="small-card__title">
-      <h1><a [routerLink]="['content', Id]" >{{ cardTitle }}</a></h1>
-    </div>
-  </div>
-
-  <div class="container__small-card__separator">
-    <hr>
-  </div>
-
-</div>
+<article class="story-card"><a class="story-card__image" [routerLink]="['/content', Id]"><img [src]="photoCover" [alt]="cardTitle"></a><div class="story-card__body"><div class="story-card__meta"><span>{{ category }}</span><time>{{ date }}</time></div><h2><a [routerLink]="['/content', Id]">{{ cardTitle }}</a></h2><a class="story-card__arrow" [routerLink]="['/content', Id]" aria-label="Ler matéria">↗</a></div></article>
 
 
 

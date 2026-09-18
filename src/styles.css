@@ -1,14 +1,3 @@
-/* You can add global styles to this file, and also import other style files */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
-*{
-  margin:0;
-  padding:0;
-  box-sizing: border-box;
-  background-color: #111111;
-  color:white;
-  font-family: 'Open Sans', sans-serif;
-}
-
-a{
-  text-decoration: none;
-}
+@import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni:opsz,wght@6..96,500;6..96,600;6..96,700&family=Public+Sans:wght@400;500;600;700&display=swap');
+:root { --ink:#171713; --paper:#f6f4ef; --paper-deep:#ece8df; --muted:#6d6a62; --line:#d7d2c7; --accent:#c74d32; --display:'Libre Bodoni', Georgia, serif; --body:'Public Sans', Arial, sans-serif; }
+* { box-sizing: border-box; } html { background: var(--paper); } body { margin:0; color:var(--ink); background:var(--paper); font-family:var(--body); } a { color:inherit; text-decoration:none; } img { display:block; max-width:100%; } a:focus-visible { outline:3px solid var(--accent); outline-offset:4px; }

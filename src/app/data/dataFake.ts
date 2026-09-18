@@ -1,14 +1,6 @@
 export const dataFake = [
-  {
-    "id":"1",
-    "title": "NOVO HOMEM DE FERRO EM 3D",
-    "description": "marvel anuncia um novo filme do homem de ferro, confira",
-    "photoCover":"https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/7F51FA9F6CBD9F0C9B1394B1CC0A6A842D07091318674E234CD33CBF7C28CDC3/scale?width=1200&aspectRatio=1.78&format=jpeg"
-  },
-  {
-    "id":"2",
-    "title": "Nova Série anunciada no Disney +",
-    "description": "bla blabla",
-    "photoCover":"https://disneyplusbrasil.com.br/wp-content/uploads/2021/07/Series-Marvel-Disney-Plus-1024x576.jpg"
-  }
-]
+  { id:'1', category:'Cinema', date:'18 set 2026', readTime:'6 min de leitura', title:'O que esperar da nova fase de Tony Stark no cinema', description:'Depois de anos de especulação, o universo de Homem de Ferro ganha uma nova abordagem. Reunimos o que já foi confirmado, as pistas mais interessantes e por que esta história pode ser decisiva para o futuro do MCU.', photoCover:'https://images.unsplash.com/photo-1635805737707-575885ab0820?auto=format&fit=crop&w=1400&q=85' },
+  { id:'2', category:'Séries', date:'16 set 2026', readTime:'4 min de leitura', title:'As séries Marvel que merecem entrar na sua lista agora', description:'Entre retornos aguardados e estreias discretas, há boas histórias para acompanhar sem precisar passar a semana inteira em frente à tela.', photoCover:'https://images.unsplash.com/photo-1612036782180-6f0b6cd846fe?auto=format&fit=crop&w=900&q=85' },
+  { id:'3', category:'Cinema', date:'14 set 2026', readTime:'5 min de leitura', title:'Pantera Negra: por que Wakanda segue no centro do MCU', description:'O próximo capítulo promete ampliar a mitologia de Wakanda e reposicionar personagens que o público aprendeu a amar.', photoCover:'https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/35720ACD323F927C3A83D809D0F460BD3651740DA519BCC184B6F042057EA14D/scale?width=1200&aspectRatio=1.78&format=jpeg' },
+  { id:'4', category:'Bastidores', date:'11 set 2026', readTime:'3 min de leitura', title:'X-Men em produção: as pistas deixadas pelo diretor', description:'Em uma entrevista recente, o cineasta indicou o tom e a escala da produção que vai apresentar os mutantes a uma nova geração.', photoCover:'https://images.unsplash.com/photo-1626814026160-2237a95fc5a0?auto=format&fit=crop&w=900&q=85' }
+];

@@ -11,6 +11,9 @@ export class ContentComponent implements OnInit {
   photoCover:string = ""
   contentTitle:string = ""
   contentDescription:string = ""
+  contentCategory:string = ""
+  contentDate:string = ""
+  contentReadTime:string = ""
   private id:string | null = "0"
 
   constructor(
@@ -26,11 +29,14 @@ export class ContentComponent implements OnInit {
   }
 
   setValuesToComponent(id:string | null){
-    const result = dataFake.filter(article => article.id == id)[0]
-
+    const result = dataFake.find(article => article.id == id)
+    if (!result) return
     this.contentTitle = result.title
     this.contentDescription = result.description
     this.photoCover = result.photoCover
+    this.contentCategory = result.category
+    this.contentDate = result.date
+    this.contentReadTime = result.readTime
   }
 
 }
